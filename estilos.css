@@ -37,7 +37,7 @@
     text-shadow: 0 3px 3px gray;
 }
 
-.jumbotron h1{
+h1{
     font-size: 50px;
 }
 
@@ -137,5 +137,27 @@ footer a{
     letter-spacing: 15px;
 }
 
-
+/* ------------ Productos ------------- */
     
+.jumbotronP{
+    height: 400px;
+    background-image: url(img/fondoProductos.jpg);
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 0 1px 1px rgb(255, 0, 0); 
+}
+
+
+
+.secP{
+    background-color: bisque;
+}
+ 
+
+
+.gap{
+    grid-gap: 50px;
+}
