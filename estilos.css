@@ -147,50 +147,34 @@ footer a{
     background-position: center;
     font-size: 30px;
     color: #000000;
-    text-shadow: 0 1px 1px rgb(255, 0, 0); 
+    text-shadow: 0 1px 1px white; 
 }
 
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-    "producto1"
-    "producto2"
-    "producto3"
-    "producto4"
-    "producto5"
-    "producto6";
-    margin: 0px 0px;
-
-}
-
-.producto{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.producto img{
-    margin-bottom: 20px;
-    height: 300px;
-}
-
-.botonP{
-    font-size: 30px;
-}
-
-.contenedorP{
-    background-color: bisque;
-
-}
 
 
 .secP{
-    background-color: bisque;
+    background-color: rgb(226, 207, 183);
+    text-align: center;
+    padding-bottom: 20px;
 }
- 
 
-
-.gap{
-    grid-gap: 50px;
+.secP h3{
+    margin-top: 20px;
 }
+
+.secP img{
+    margin-bottom: 20px;
+}
+
+.col-6 h3{
+    font-size: 16px;
+}
+
+.col-md-4 h3{
+    font-size: 25px;
+}
+
+.col-md-4 a{
+    font-size: 25px;
+}
+
