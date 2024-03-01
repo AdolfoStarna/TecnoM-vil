@@ -2,6 +2,8 @@
 
 *{
     font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -210,5 +212,23 @@ footer a{
 }
 
 .col-12 a{
+    font-size: 20px;
+}
+/* ------------ Quiénes somos ------------- */
+.jumbotronQS{
+    height: 400px;
+    background-image: url(img/jumbotronQS.jpg);
+    font-weight: 900;
+    background-size: cover;
+    background-position: left;
+    font-size: 30px;
+    color: black;
+    text-shadow: 0 1px 5px white; 
+}
+
+.secQS{
+    background-color: rgb(226, 207, 183);
+    text-align: center;
+    padding: 20px 0px;
     font-size: 20px;
 }
