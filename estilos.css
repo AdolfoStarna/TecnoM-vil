@@ -4,6 +4,7 @@
   font-family: "Lato", sans-serif;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -188,7 +189,7 @@ footer a {
   background-position: center;
   font-size: 30px;
   color: black;
-  text-shadow: 0 1px 5px red;
+  text-shadow: 0 1px 5px white;
 }
 
 .secS {
@@ -231,4 +232,31 @@ footer a {
   text-align: center;
   padding: 20px 0px;
   font-size: 20px;
+}
+
+/* ------------ Contacto ------------- */
+.jumbotronC {
+  height: 400px;
+  background-image: url(img/jumbotronC.jpg);
+  font-weight: 900;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 30px;
+  color: black;
+  text-shadow: 0 1px 5px white;
+  text-align: center;
+}
+
+.secC {
+  background-color: rgb(226, 207, 183);
+  text-align: center;
+}
+
+.linkC {
+  padding-top: 20px;
+}
+
+.linkC a {
+  font-size: 30px;
+  text-decoration: none;
 }/*# sourceMappingURL=estilos.css.map */
