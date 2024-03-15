@@ -7,6 +7,19 @@
   box-sizing: border-box;
 }
 
+body {
+  animation-name: aparecer;
+  animation-duration: 2s;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .flexbox {
   display: flex;
 }
