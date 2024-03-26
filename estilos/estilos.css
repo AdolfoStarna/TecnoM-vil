@@ -1,25 +1,4 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-* {
-  font-family: "Lato", sans-serif;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-  animation-name: aparecer;
-  animation-duration: 2s;
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .flexbox {
   display: flex;
 }
@@ -47,7 +26,7 @@ body {
 
 .jumbotron {
   height: 400px;
-  background-image: url(img/workspace-1280538_1920.jpg);
+  background-image: url(../img/workspace-1280538_1920.jpg);
   font-weight: bold;
   background-size: cover;
   background-position: right;
@@ -56,35 +35,8 @@ body {
   text-shadow: 0 3px 3px gray;
 }
 
-h1 {
-  font-size: 50px;
-}
-
-.boton {
-  text-decoration: none;
-  background-color: rgba(14, 125, 168, 0.87);
-  color: rgb(255, 255, 255);
-  text-shadow: none;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.boton:hover {
-  color: #ff0;
-}
-
-h2 {
-  text-align: center;
-  background-color: gray;
-  padding: 20px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 3px 3px #000;
-  margin-bottom: 0;
-}
-
 .nleft {
-  background-image: url(img/iphones-7479304_1920.jpg);
+  background-image: url(../img/iphones-7479304_1920.jpg);
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -121,7 +73,7 @@ h4 {
 }
 
 .Pleft {
-  background-image: url(img/iphonesvarios.jpg);
+  background-image: url(../img/iphonesvarios.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -139,7 +91,7 @@ h4 {
 }
 
 .Sleft {
-  background-image: url(img/indexservicios.jpg);
+  background-image: url(../img/indexservicios.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -159,10 +111,9 @@ footer a {
   letter-spacing: 15px;
 }
 
-/* ------------ Productos ------------- */
 .jumbotronP {
   height: 400px;
-  background-image: url(img/fondoProductos.jpg);
+  background-image: url(../img/fondoProductos.jpg);
   font-weight: bold;
   background-size: cover;
   background-position: center;
@@ -197,10 +148,9 @@ footer a {
   font-size: 25px;
 }
 
-/* ------------ Servicios ------------- */
 .jumbotronS {
   height: 400px;
-  background-image: url(img/jumbotronS.jpg);
+  background-image: url(../img/jumbotronS.jpg);
   font-weight: 900;
   background-size: cover;
   background-position: center;
@@ -232,10 +182,9 @@ footer a {
   font-size: 20px;
 }
 
-/* ------------ Quiénes somos ------------- */
 .jumbotronQS {
   height: 400px;
-  background-image: url(img/jumbotronQS.jpg);
+  background-image: url(../img/jumbotronQS.jpg);
   font-weight: 900;
   background-size: cover;
   background-position: left;
@@ -252,10 +201,81 @@ footer a {
   font-size: 20px;
 }
 
-/* ------------ Contacto ------------- */
+.contenedorQS {
+  display: flex;
+  justify-content: center;
+}
+
+.clientesQS {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: repeat(6, 300px);
+  grid-gap: 15px;
+  grid-template-areas: "cliente1" "cliente2" "cliente3" "cliente4" "cliente5" "cliente6";
+}
+
+.cliente {
+  background-position: center;
+  background-size: cover;
+}
+
+.cliente1 {
+  background-image: url(../img/cliente1.jpg);
+  grid-area: cliente1;
+}
+
+.cliente2 {
+  background-image: url(../img/cliente2.jpg);
+  grid-area: cliente2;
+}
+
+.cliente3 {
+  background-image: url(../img/cliente3.jpg);
+  grid-area: cliente3;
+}
+
+.cliente4 {
+  background-image: url(../img/cliente4.jpg);
+  grid-area: cliente4;
+}
+
+.cliente5 {
+  background-image: url(../img/cliente5.jpg);
+  grid-area: cliente5;
+  background-position: top;
+}
+
+.cliente6 {
+  background-image: url(../img/cliente6.jpg);
+  grid-area: cliente6;
+  background-position: top;
+}
+
+@media only screen and (min-width: 370px) {
+  .clientesQS {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(3, 300px);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding: 0px 10px;
+    grid-template-areas: "cliente1 cliente2" "cliente3 cliente4" "cliente5 cliente6";
+  }
+}
+@media only screen and (min-width: 768px) {
+  .clientesQS {
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 400px);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding: 0px 10px;
+    grid-template-areas: "cliente1 cliente2 cliente3" "cliente4 cliente5 cliente6";
+  }
+}
 .jumbotronC {
   height: 400px;
-  background-image: url(img/jumbotronC.jpg);
+  background-image: url(../img/jumbotronC.jpg);
   font-weight: 900;
   background-size: cover;
   background-position: bottom;
@@ -277,4 +297,51 @@ footer a {
 .linkC a {
   font-size: 30px;
   text-decoration: none;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  animation-name: aparecer;
+  animation-duration: 2s;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h1 {
+  font-size: 50px;
+}
+
+.boton {
+  text-decoration: none;
+  background-color: rgba(14, 125, 168, 0.87);
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.boton:hover {
+  color: #ff0;
+}
+
+h2 {
+  text-align: center;
+  background-color: gray;
+  padding: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 3px 3px #000;
+  margin-bottom: 0;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,101 @@
+.jumbotronQS{
+    height: 400px;
+    background-image: url(../img/jumbotronQS.jpg);
+    font-weight: 900;
+    background-size: cover;
+    background-position: left;
+    font-size: 30px;
+    color: black;
+    text-shadow: 0 1px 5px white; 
+}
+
+.secQS{
+    background-color: rgb(226, 207, 183);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.contenedorQS{
+    display: flex;
+    justify-content: center;
+}
+
+.clientesQS{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(6, 300px);
+    grid-gap: 15px;
+    grid-template-areas: 
+    "cliente1"
+    "cliente2"
+    "cliente3"
+    "cliente4"
+    "cliente5"
+    "cliente6";
+}
+
+.cliente{
+    background-position: center;
+    background-size: cover;
+}
+
+.cliente1{
+    background-image: url(../img/cliente1.jpg);
+    grid-area: cliente1;
+}
+
+.cliente2{
+    background-image: url(../img/cliente2.jpg);
+    grid-area: cliente2;
+}
+
+.cliente3{
+    background-image: url(../img/cliente3.jpg);
+    grid-area: cliente3;
+}
+
+.cliente4{
+    background-image: url(../img/cliente4.jpg);
+    grid-area: cliente4;
+}
+
+.cliente5{
+    background-image: url(../img/cliente5.jpg);
+    grid-area: cliente5;
+    background-position: top;
+}
+
+.cliente6{
+    background-image: url(../img/cliente6.jpg);
+    grid-area: cliente6;
+    background-position: top;
+}
+
+@media only screen and (min-width: 370px) {
+    .clientesQS{
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(3, 300px);
+        column-gap: 20px;
+        padding: 0px 10px;
+        grid-template-areas: 
+        "cliente1 cliente2"
+        "cliente3 cliente4"
+        "cliente5 cliente6";
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .clientesQS{
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 400px);
+        column-gap: 20px;
+        padding: 0px 10px;
+        grid-template-areas: 
+        "cliente1 cliente2 cliente3"
+        "cliente4 cliente5 cliente6";
+    }
+}
