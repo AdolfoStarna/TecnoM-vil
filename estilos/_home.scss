@@ -1,25 +1,36 @@
 .jumbotron{
-    height: 400px;
+    height: $jumboHeight;
     background-image: url(../img/workspace-1280538_1920.jpg);
     font-weight: bold;
     background-size: cover;
     background-position: right;
     font-size: 30px;
-    color: #fff;
+    color: $blanco;
     text-shadow: 0 3px 3px gray;
+}
+
+.nleft, .Pleft, .Sleft{
+    background-position: center;
+    background-size: cover;
+    height: 350px;
 }
 
 .nleft{
     background-image: url(../img/iphones-7479304_1920.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 350px;
 }
 
-.nright{
+.Pleft{
+    background-image: url(../img/iphonesvarios.jpg);
+}
+
+.Sleft{
+    background-image: url(../img/indexservicios.jpg);
+}
+
+.Pright, .Sright, .nright{
     padding: 20px;
-    background-color: rgba(128, 128, 128, 0.466);
-    text-shadow: 0 2px 2px white;
+    background-color: $gris;
+    text-shadow: 0 2px 2px $blanco;
     font-weight: 400;
 }
 
@@ -31,40 +42,21 @@
     font-size: 20px;
 }
 
-.articulo{
-    border: 5px solid #000;
-    text-align: center;
-    background-color: beige;
-}
-h4{
-    margin-bottom: 20px;
-}
-.articulo i{
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.Pleft{
-    background-image: url(../img/iphonesvarios.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 350px;
-}
-
-.Pright, .Sright{
-    padding: 20px;
-    background-color: rgba(128, 128, 128, 0.466);
-    text-shadow: 0 2px 2px white;
-    font-weight: 400;
-}
-
 .Pright a, .Sright a{
     align-self: flex-end;
 }
 
-.Sleft{
-    background-image: url(../img/indexservicios.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 350px;
+.articulo{
+    border: 5px solid $negro;
+    text-align: center;
+    background-color: beige;
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
+.articulo i{
+    font-size: 35px;
+    margin-bottom: 20px;
 }

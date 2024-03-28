@@ -1,16 +1,16 @@
 .jumbotronP{
-    height: 400px;
+    height: $jumboHeight;
     background-image: url(../img/fondoProductos.jpg);
     font-weight: bold;
     background-size: cover;
     background-position: center;
     font-size: 30px;
-    color: #000000;
-    text-shadow: 0 1px 1px white; 
+    color: $negro;
+    text-shadow: 0 1px 1px $blanco; 
 }
 
 .secP{
-    background-color: rgb(226, 207, 183);
+    background-color: $sec;
     text-align: center;
     padding-bottom: 20px;
 }

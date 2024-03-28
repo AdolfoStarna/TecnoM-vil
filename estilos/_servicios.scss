@@ -1,16 +1,16 @@
 .jumbotronS{
-    height: 400px;
+    height: $jumboHeight;
     background-image: url(../img/jumbotronS.jpg);
     font-weight: 900;
     background-size: cover;
     background-position: center;
     font-size: 30px;
-    color: black;
-    text-shadow: 0 1px 5px white; 
+    color: $negro;
+    text-shadow: 0 1px 5px $blanco; 
 }
 
 .secS{
-    background-color: rgb(226, 207, 183);
+    background-color: $sec;
     text-align: center;
     padding-bottom: 20px;
 }

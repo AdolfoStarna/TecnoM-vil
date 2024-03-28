@@ -16,8 +16,8 @@
 }
 
 .nav-link {
-  color: #fff !important;
-  text-shadow: 0 0 5px #000;
+  color: white !important;
+  text-shadow: 0 0 5px black;
 }
 
 .nav-link:hover {
@@ -31,18 +31,29 @@
   background-size: cover;
   background-position: right;
   font-size: 30px;
-  color: #fff;
+  color: white;
   text-shadow: 0 3px 3px gray;
+}
+
+.nleft, .Pleft, .Sleft {
+  background-position: center;
+  background-size: cover;
+  height: 350px;
 }
 
 .nleft {
   background-image: url(../img/iphones-7479304_1920.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 350px;
 }
 
-.nright {
+.Pleft {
+  background-image: url(../img/iphonesvarios.jpg);
+}
+
+.Sleft {
+  background-image: url(../img/indexservicios.jpg);
+}
+
+.Pright, .Sright, .nright {
   padding: 20px;
   background-color: rgba(128, 128, 128, 0.466);
   text-shadow: 0 2px 2px white;
@@ -57,8 +68,12 @@
   font-size: 20px;
 }
 
+.Pright a, .Sright a {
+  align-self: flex-end;
+}
+
 .articulo {
-  border: 5px solid #000;
+  border: 5px solid black;
   text-align: center;
   background-color: beige;
 }
@@ -70,31 +85,6 @@ h4 {
 .articulo i {
   font-size: 35px;
   margin-bottom: 20px;
-}
-
-.Pleft {
-  background-image: url(../img/iphonesvarios.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-}
-
-.Pright, .Sright {
-  padding: 20px;
-  background-color: rgba(128, 128, 128, 0.466);
-  text-shadow: 0 2px 2px white;
-  font-weight: 400;
-}
-
-.Pright a, .Sright a {
-  align-self: flex-end;
-}
-
-.Sleft {
-  background-image: url(../img/indexservicios.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 350px;
 }
 
 footer {
@@ -118,7 +108,7 @@ footer a {
   background-size: cover;
   background-position: center;
   font-size: 30px;
-  color: #000000;
+  color: black;
   text-shadow: 0 1px 1px white;
 }
 
@@ -326,7 +316,7 @@ h1 {
 .boton {
   text-decoration: none;
   background-color: rgba(14, 125, 168, 0.87);
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: none;
   border-radius: 10px;
   padding: 10px;
@@ -341,7 +331,7 @@ h2 {
   background-color: gray;
   padding: 20px;
   font-weight: bold;
-  color: #fff;
-  text-shadow: 0 3px 3px #000;
+  color: white;
+  text-shadow: 0 3px 3px black;
   margin-bottom: 0;
 }/*# sourceMappingURL=estilos.css.map */

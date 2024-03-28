@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import '_vars.scss';
 @import '_navbar.scss';
 @import '_home.scss';
 @import '_footer.scss';
@@ -35,7 +36,7 @@ h1{
 .boton{
     text-decoration: none;
     background-color: rgba(14, 125, 168, 0.87);
-    color: rgb(255, 255, 255);
+    color: $blanco;
     text-shadow: none;
     border-radius: 10px;
     padding: 10px;
@@ -50,7 +51,7 @@ h2{
     background-color: gray;
     padding: 20px;
     font-weight: bold;
-    color: #fff;
-    text-shadow: 0 3px 3px #000;
+    color: $blanco;
+    text-shadow: 0 3px 3px $negro;
     margin-bottom: 0;
 }
